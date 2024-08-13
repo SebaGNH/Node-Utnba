@@ -1,0 +1,16 @@
+{
+  "name": "utnba",
+  "version": "1.0.0",
+  "description": "node index.js <-- ejecutamos el archivo",
+  "main": "index.js",
+  "type": "module",
+
+  "scripts": {
+    "dev1": "node --watch ./index01.js",
+    "dev2": "node --watch ./index02.js",
+    "dev3": "node --watch ./index03.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
