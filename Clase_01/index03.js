@@ -1,4 +1,4 @@
-import { movies } from './TestData.js';
+import { movies } from '../apiDataTest/TestData.js';
 import express from 'express';
 
 const app = express();
@@ -23,4 +23,4 @@ app.get("/movies",(req, res)=>{
     res.send(`<pre>${JSON.stringify(movies, null, 2)}</pre>`);
 })
 
-
+// es lo mismo que en index02, pero en expres

@@ -1,4 +1,4 @@
-import { movies } from './TestData.js';
+import { movies } from '../apiDataTest/TestData.js';
 import http from 'node:http';
 
 const port = process.env.PORT ?? 8000; // El puerto será "process.env.PORT" o "8000" por defecto
