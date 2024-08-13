@@ -4,13 +4,15 @@
   "description": "node index.js <-- ejecutamos el archivo",
   "main": "index.js",
   "type": "module",
-
   "scripts": {
-    "dev1": "node --watch ./index01.js",
-    "dev2": "node --watch ./index02.js",
-    "dev3": "node --watch ./index03.js",
+    "dev01": "node --watch ./Clase_01/index01.js",
+    "dev02": "node --watch ./Clase_01/index02.js",
+    "dev03": "node --watch ./Clase_01/index03.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.19.2"
+  }
 }
