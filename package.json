@@ -9,6 +9,7 @@
     "dev02": "node --watch ./Clase_01/index02.js",
     "dev03": "node --watch ./Clase_01/index03.js",
     "dev04": "node --watch ./Clase_02/index04.js",
+    "dev05": "node --watch ./Clase_02_02/index05.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
