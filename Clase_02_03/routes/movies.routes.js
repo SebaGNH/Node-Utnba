@@ -8,7 +8,8 @@ export const moviesRouter = Router();
 moviesRouter.get("/films", (getAllMovies));
 
 //usando controller
-moviesRouter.get("/", movieController.getAllMovies);
+moviesRouter.get("/test", movieController.getAllMoviesTestData);
+moviesRouter.get("/", movieController.getAllMoviesMongo);
 
 // serch
 moviesRouter.get("/s", movieController.getByTitle); // api/movies/s?title=Inception

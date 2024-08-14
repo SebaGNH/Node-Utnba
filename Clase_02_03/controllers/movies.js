@@ -13,7 +13,7 @@ export const getAllMovies = (req, res) => {
 }
 
 export const movieController = {
-    getAllMovies(req, res) {
+    getAllMoviesTestData(req, res) {
         movies.length
             ? res
                 .status(200)
@@ -21,6 +21,10 @@ export const movieController = {
             : res
                 .status(404)
                 .json({ success: false, message: "Movies database empty"})
+    },
+    async getAllMoviesMongo(req, res) {
+        const movieCollection = await Movie.find() // peliculas de mongoDB
+        res.send(movieCollection);
     },
     getByTitle(req, res) {
         // res.send(`Find movie by name ${req.query.title}`);
