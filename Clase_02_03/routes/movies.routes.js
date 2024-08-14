@@ -13,27 +13,17 @@ moviesRouter.get("/", movieController.getAllMovies);
 // serch
 moviesRouter.get("/s", movieController.getByTitle); // api/movies/s?title=Inception
 
+// buscar por id
+moviesRouter.get("/:id", movieController.getById);
 
+// Crear película
+moviesRouter.post("/", movieController.postMovie);
 
+// Actualizar
+moviesRouter.patch("/:id", movieController.patchMovie);
 
-
-
-moviesRouter.get("/:id", (req, res) => {
-    res.send(`List movie by id ${req.params.id}`);
-});
-// req.params.id <-- extraemos el parámetro id
-
-moviesRouter.post("/", (req, res) => res.send("Create Movies"));
-
-moviesRouter.patch("/:id", (req, res) => {
-    const id = req.params.id; // <-- otro modo para sacar el parámetro
-    res.send(`Update Movies by id ${id}`);
-});
-
-moviesRouter.delete("/:id", (req, res) => {
-    const { id } = req.params;
-    res.send(`Delete all Movies ${id}`);
-});
+// Eliminar
+moviesRouter.delete("/:id", movieController.deleteMovie);
 
 
 
